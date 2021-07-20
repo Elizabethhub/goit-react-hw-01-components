@@ -1,6 +1,7 @@
 {
   "name": "goit-react-hw-01-components",
   "version": "0.1.0",
+  "homepage": "http://Elizabethhub.github.io/goit-react-hw-01-components",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -36,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prop-types": "^15.7.2"
   }
 }
