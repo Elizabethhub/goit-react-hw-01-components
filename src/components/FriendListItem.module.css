@@ -1,0 +1,22 @@
+.friends {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  list-style: none;
+  padding: 10px;
+}
+
+.online {
+  display: inline-flex;
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.offline {
+  composes: online;
+  background-color: red;
+}
