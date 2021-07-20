@@ -1,9 +1,10 @@
 import React from "react";
 import TransactionsItem from "./TransactionsItem";
+import styles from "../components/table.css";
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table style={{ display: "block", border: 1, borderColor: "black" }}>
       <thead>
         <tr>
           <th>Type</th>

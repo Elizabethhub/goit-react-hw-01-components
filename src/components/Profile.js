@@ -5,6 +5,7 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
     <div
       style={{
         display: "inline-block",
+        width: "auto",
         padding: 50,
         backgroundColor: "grey",
         textAlign: "center",
