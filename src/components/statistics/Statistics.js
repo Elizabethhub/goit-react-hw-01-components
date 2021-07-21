@@ -11,19 +11,21 @@ const Statistics = ({ title, stats }) => {
         padding: 5,
       }}
     >
-      <h2
-        style={{
-          textAlign: "center",
-          color: "darkkhaki",
-        }}
-      >
-        {title.toUpperCase()}
-      </h2>
+      {title && (
+        <h2
+          style={{
+            textAlign: "center",
+            color: "darkkhaki",
+          }}
+        >
+          {title.toUpperCase()}
+        </h2>
+      )}
 
       <ul style={{ display: "flex", listStyle: "none", justifyContent: "center", width: "auto" }}>
         {stats.map((data) => (
           <StatisticsItem data={data} key={data.id} />
-        ))}{" "}
+        ))}
       </ul>
     </section>
   );

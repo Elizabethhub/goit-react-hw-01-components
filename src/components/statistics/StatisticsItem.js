@@ -23,8 +23,10 @@ const StatisticsItem = ({ data }) => {
 };
 
 StatisticsItem.propTypes = {
-  persentage: PropTypes.number,
-  label: PropTypes.string,
+  data: PropTypes.shape({
+    persentage: PropTypes.number,
+    label: PropTypes.string,
+  }),
 };
 
 export default StatisticsItem;

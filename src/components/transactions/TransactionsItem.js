@@ -12,9 +12,11 @@ const TransactionsItem = ({ item }) => {
 };
 
 TransactionsItem.propTypes = {
-  type: PropTypes.string,
-  amount: PropTypes.number,
-  currency: PropTypes.number,
+  item: PropTypes.shape({
+    type: PropTypes.string,
+    amount: PropTypes.number,
+    currency: PropTypes.number,
+  }),
 };
 
 export default TransactionsItem;
