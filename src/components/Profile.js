@@ -5,12 +5,15 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
     <div
       style={{
-        display: "inline-block",
+        display: "flex",
         width: "auto",
         padding: 50,
         backgroundColor: "grey",
         textAlign: "center",
         marginBottom: 10,
+        border: 2,
+        borderRadius: 5,
+        alignItems: "center",
       }}
     >
       <div className="description">
