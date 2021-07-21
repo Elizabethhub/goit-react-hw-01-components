@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const StatisticsItem = ({ data }) => {
   return (
@@ -14,12 +15,16 @@ const StatisticsItem = ({ data }) => {
         borderInlineColor: "blue",
         borderRadius: 5,
       }}
-      key={data.id}
     >
       <span className="label">{data.label}</span>
       <span className="percentage">{data.percentage}</span>
     </li>
   );
+};
+
+StatisticsItem.propTypes = {
+  persentage: PropTypes.number,
+  label: PropTypes.string,
 };
 
 export default StatisticsItem;

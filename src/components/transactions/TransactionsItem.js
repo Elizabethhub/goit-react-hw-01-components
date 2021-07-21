@@ -1,14 +1,20 @@
 import React from "react";
-import styles from "../components/table.css";
+import PropTypes from "prop-types";
 
 const TransactionsItem = ({ item }) => {
   return (
-    <tr key={item.id}>
+    <tr>
       <td>{item.type}</td>
       <td>{item.amount}</td>
       <td>{item.currency}</td>
     </tr>
   );
+};
+
+TransactionsItem.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.number,
 };
 
 export default TransactionsItem;

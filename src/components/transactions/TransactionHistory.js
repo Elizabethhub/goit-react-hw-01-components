@@ -1,6 +1,5 @@
 import React from "react";
-import TransactionsItem from "./TransactionsItem";
-import styles from "../components/table.css";
+import TransactionsItem from "../transactions/TransactionsItem";
 
 const TransactionHistory = ({ items }) => {
   return (
